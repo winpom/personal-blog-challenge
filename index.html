@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/blog.css">
+    <link rel="stylesheet" href="./assets/css/form.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Win's Online Blog</title>
+</head>
+
+<body>
+    <header>
+        <h1>Blog Input Page</h1>
+    </header>
+
+    <main>
+        <h2>Create a New Blog Post</h2>
+        <form id="blogForm">
+            <label for="username">Username:</label><br>
+            <input type="text" id="usernameInput" name="username" required><br><br>
+
+            <label for="title">Title:</label><br>
+            <input type="text" id="titleInput" name="title" required><br><br>
+
+            <label for="content">Content:</label><br>
+            <textarea id="contentInput" name="content" rows="4" cols="50" required></textarea><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Blog Website.</p>
+    </footer>
+    <script src="./assets/js/blog.js"></script>
+    <script src="./assets/js/form.js"></script>
+    <script src="./assets/js/logic.js"></script>
+</body>
+
+</html>
