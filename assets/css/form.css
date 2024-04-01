@@ -22,8 +22,13 @@ form {
 input,
 textarea {
     width: 90%;
-    height: 100%;
     resize: vertical;
+}
+
+textarea {
+    width: 90%;
+    resize: vertical;
+    min-height: 100px;
 }
 
 input::placeholder,
@@ -45,8 +50,8 @@ textarea::placeholder {
 .left-section {
     flex: 1;
     border-right: 10px double;
-    margin: 1em auto auto 1em;
-    padding-top: 1em;
+    margin: 1em;
+    padding: 1em 0 1em 0;
     /* Take up all available space in the left section */
 }
 

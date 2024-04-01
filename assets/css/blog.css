@@ -25,3 +25,20 @@ h3 {
 h4 {
     border-bottom: solid;
 }
+
+.footer {
+    line-height: 0;
+    text-align: left;
+    padding: 0 1em 0;
+}
+
+.footer a {
+    border: none;
+    padding: 0;
+    margin: none;
+}
+
+.footer p {
+    font-size: .6em;
+    line-height: .7em;
+}
