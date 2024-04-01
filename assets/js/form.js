@@ -1,11 +1,17 @@
-function submitBlogPost() {
+const submitButton = document.querySelector('#submit');
+
+submitButton.addEventListener('click', function (event) {
+    event.preventDefault();
+
     const username = document.getElementById('usernameInput').value;
     const title = document.getElementById('titleInput').value;
     const content = document.getElementById('contentInput').value;
 
-    const titleWithoutSpaces = title.replace(/\s+/g, '-');
-
-    const uniquePostName = `blogPost-${titleWithoutSpaces}`;
+    // Stop execution if any field is empty
+    if (username.trim() === '' || title.trim() === '' || content.trim() === '') {
+        alert('Please fill out all fields before submitting.');
+        return; 
+    }
 
     let blogPosts = JSON.parse(localStorage.getItem('blogPosts')) || [];
 
@@ -15,10 +21,11 @@ function submitBlogPost() {
         content: content,
     };
 
-    blogPosts[uniquePostName] = newBlogPost;
+    blogPosts.push(newBlogPost);
 
     localStorage.setItem('blogPosts', JSON.stringify(blogPosts));
 
-    const successMessage = document.getElementById('successMessage');
-    successMessage.textContent = 'Blog post submitted successfully!';
-}
+    alert('Blog post submitted successfully!');
+
+    window.location.href = 'blog.html';
+})

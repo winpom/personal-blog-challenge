@@ -1,0 +1,118 @@
+:root {
+    --light-text: black;
+    --light-background: #f0ead6;
+    --dark-text: #bebebe;
+    --dark-background: #243447;
+}
+
+body {
+    background-color: var(--dark-background);
+    color: var(--dark-text);
+}
+
+header {
+    border-bottom: 10px double;
+    padding-bottom: 1em;
+}
+
+footer {
+    text-align: center;
+    margin-top: 1em;
+    border-top: 10px double;;
+}
+
+a {
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin: auto 0 auto 0;
+    text-decoration: none;
+    padding: 4px;
+    border: solid 1px;
+}
+
+a:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 2); /* Adds a shadow on hover */
+}
+
+img {
+    border: solid 5px;
+}
+
+h1,
+h2 {
+    text-align: center;
+    padding-bottom: .5em;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 1.75em;
+    padding-bottom: .75em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.25em;
+    padding-bottom: .5em;
+}
+
+h5 {
+    font-size: .8em;
+}
+
+h6 {
+    font-size: .75em;
+}
+
+#themeSwitcher {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.submit {
+    display: block;
+    margin: auto;
+}
+
+.submit:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1); /* Adds a shadow on hover */
+}
+
+/* Dark Mode */
+.dark {
+    background-color: var(--dark-background);
+    color: var(--dark-text)
+}
+
+.dark a {
+    color: var(--dark-text)
+}
+
+.dark button {
+    color: var(--light-text);
+    background-color: var(--light-background);
+}
+
+/* Light Mode */
+.light {
+    background-color: var(--light-background);
+    color: var(--light-text);
+}
+
+.light a {
+    color: var(--light-text);
+}
+
+.light button {
+    color: var(--dark-text);
+    background-color: var(--dark-background);
+}

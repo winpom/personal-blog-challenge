@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    justify-content: right;
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-top: 1.1em;
+}
+
+form {
+    width: 45vw;
+    min-width: 250px;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+input,
+textarea {
+    width: 90%;
+    height: 100%;
+    resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgb(173, 173, 173);
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.main-container {
+    display: flex;
+}
+
+.left-section {
+    flex: 1;
+    border-right: 10px double;
+    margin: 1em auto auto 1em;
+    padding-top: 1em;
+    /* Take up all available space in the left section */
+}
+
+.right-section {
+    flex: 1;
+    /* Take up all available space in the right section */
+    padding: 10px;
+    /* Add padding to separate the content from the edges */
+}
